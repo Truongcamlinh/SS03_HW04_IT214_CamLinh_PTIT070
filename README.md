@@ -1,9 +1,5 @@
 # Bài 4: Phân tích sự cố Service Discovery khi scale hệ thống
 
-**Sinh viên:** Cam Linh  
-**Lớp:** IT214 - PTIT070  
-**Repo:** SS03_HW04_IT214_CamLinh_PTIT070
-
 ## 1. Mô tả sự cố
 
 Hệ thống FoodX tăng `restaurant-service` từ 1 instance lên 4 instance để chịu tải giờ cao điểm. Tuy nhiên `order-service` vẫn chỉ gọi được một instance, nên việc scale gần như không có tác dụng.
