@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: restaurant-service
+
+server:
+  port: ${PORT:0}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
